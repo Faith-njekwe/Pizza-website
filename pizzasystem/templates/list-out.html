@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Your Orders{% endblock %}
+
+{% block content %}
+<h2>Hi {{ request.user.username }},</h2>
+<div class="list_out_container">
+    {% if orders %}
+        <ul>
+        {% for order in orders %}
+            <li> {{forloop.counter}}. {{ order.get_size_display }} {{ order.get_crust_display }} Crust {{ order.get_sauce_display }} Sauce Pizza with {{ order.get_cheese_display }} and {{ order.get_toppings_display }}.<li>
+            <br><br>
+            <li>Ordered on: {{ order.order_date|date:"F d, Y H:i" }}</li><br>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>You have no orders yet.</p>
+    {% endif %}
+</div>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <nav>
+        <ul class="navbar-list">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'order' %}">Order</a></li>
+            <li><a href="{% url 'checkout' %}">Checkout</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register_user' %}">Register</a></li>
+            <li><a href="{% url 'list_orders' %}">List of Orders</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+    {% block footer %}{% endblock %}
+</body>
+</html>

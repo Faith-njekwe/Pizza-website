@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Order Confirmation
+{% endblock %}
+
+{% block content %}
+    <h2>Thank you, {{ request.user.username }}!</h2>
+    <p>You ordered: A {{ order.get_size_display }} {{ order.get_crust_display }} crust {{ order.get_toppings_display}} pizza with {{ order.get_sauce_display }} sauce and {{ order.get_cheese_display }} cheese.</p>
+    
+    <div class="confirmation_container">
+        <h2>Order Details:</h2>
+        <ul>
+            <li>Size: {{ order.get_size_display }}</li><br>
+            <li>Crust: {{ order.get_crust_display }}</li><br>
+            <li>Sauce: {{ order.get_sauce_display }}</li><br>
+            <li>Cheese: {{ order.get_cheese_display }}</li><br>
+            <li>Toppings: {{ order.get_toppings_display }}</li><br>
+            <li>Ordered on: {{ order.order_date|date:"F d, Y H:i" }}</li><br>
+        </ul>
+    </div>
+
+    <p>If you have any questions about your order, please contact us.</p>
+{% endblock %}
+{% block footer %}
+<footer class="footer">
+    Copyright Faith Njekwe
+</footer>
+{% endblock %}
+
+

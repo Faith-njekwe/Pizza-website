@@ -1,0 +1,237 @@
+/* Custom styles for the navbar */
+
+* {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: white; /* Set the color of navbar links to white */
+}
+
+li a:hover {
+    background-color: rgb(179, 0, 0);
+}
+
+li {
+    display: inline-block;
+}
+
+body { 
+    background-color: rgb(240, 240, 240);
+    height: 100%;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+p {
+    color: black; /* Dark grey color for better readability */
+    font-family: 'Arial', sans-serif; /* Modern, clean font type */
+    font-size: 16px; /* Comfortable reading size for desktop screens */
+    line-height: 1.6; /* Spacing between lines */
+    text-align: justify; /* Justified text for a clean and aligned appearance */
+    padding: 10px; /* Optional: adds internal space if needed */
+}
+
+h2 {
+    color: black; /* Dark grey color for better readability */
+    font-family: 'Arial', sans-serif; /* Modern, clean font type */
+    line-height: 1.6; /* Spacing between lines */
+    text-align: justify; /* Justified text for a clean and aligned appearance */
+    padding: 10px; 
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+/* Image centering and sizing */
+
+/* Styles for the entire body and html to ensure full height layout */
+/* Styles for the entire body and html to ensure full height layout */
+
+/* Main container styling */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    width: 100%;
+    text-align: center; /* Center aligns the text elements within the content */
+    gap: 20px; /* Optional: adds space between elements inside the content */
+}
+
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    padding: 10px 0;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+/* Image styling */
+
+#pizza-image img {
+    width: 55%;    /* 40% of the parent container's width */
+    height: auto;  /* maintain the aspect ratio */
+    display: block; /* removes any extra space around the image */
+    margin: auto; /* centers the image horizontally */
+}
+
+#pizza-image {
+    width: 50%; /* Adjust this percentage based on your design needs */
+    margin: auto; /* Center the div container if needed */
+}
+
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}  
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: red; /* Only apply red to navbar list */
+}
+
+.form-container {
+    box-sizing: border-box; /* Ensures padding does not increase the size */
+    max-width: 600px;
+    margin: 20px auto; /* Adds vertical margin for clearer separation from other elements */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+
+input[type="text"], input[type="password"], textarea {
+    width: 100%; /* This will make the input fields take the full width of their container */
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.small-input {
+    width: 300px;  /* Adjust to make the input smaller or match your design */
+    height: 40px;  /* Standard height for better form alignment */
+    margin-bottom: 10px;  /* Spacing between form fields */
+    border: 1px solid #ccc;  /* Consistent border styling */
+    border-radius: 4px;  /* Rounded corners for aesthetics */
+}
+
+
+
+input[type="submit"] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.content-container {
+    text-align: center; /* Centers everything inside the container */
+    width: 100%; /* Takes full width to maintain centering on all screen sizes */
+}
+
+.button-index {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: white; /* Text color */
+    border: none; /* No borders */
+    padding: 10px 20px; /* Top and bottom padding, left and right padding */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* No underline on text */
+    display: inline-block; /* Allows setting dimensions */
+    font-size: 16px; /* Size of the text */
+    margin: 4px 2px; /* Margin around the button */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor appears as a pointer */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    color: white; /* Text color */
+    border: none; /* No borders */
+    padding: 10px 20px; /* Top and bottom padding, left and right padding */
+    text-align: center; /* Center the text inside the button */
+    text-decoration: none; /* No underline on text */
+    display: inline-block; /* Allows setting dimensions */
+    font-size: 16px; /* Size of the text */
+    margin: 4px 2px; /* Margin around the button */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Cursor appears as a pointer */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.button:hover {
+    background-color: #5a6268; /* A slightly darker shade when mouse hovers over it */
+    color: white; /* Text color remains the same */
+}
+
+.button-index:hover {
+    background-color: #5a6268; /* A slightly darker shade when mouse hovers over it */
+    color: white; /* Text color remains the same */
+}
+
+.custom-textarea {
+    height: 40px; /* Adjust height */
+    width: 100%;  /* Ensure it fits the container */
+    font-size: 16px;
+    padding: 8px;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.details-box {
+    padding: 10px;
+} 
+
+.register-container {
+    width: 90%;
+    max-width: 600px;  /* Adjust width to match the login page width */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.list_out_container {
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto; /* Centers the div */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+    border-radius: 8px; /* Optional: rounds the corners */
+}
+
+.confirmation_container {
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto; /* Centers the div */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+    border-radius: 8px; /* Optional: rounds the corners */
+}
