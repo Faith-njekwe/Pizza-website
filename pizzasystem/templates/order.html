@@ -10,7 +10,7 @@
 <div class="form-container">
     <form method="post" action="{% url 'order' %}">
         {% csrf_token %}
-        {{ form.as_p }} <!-- To put in spaces-->
+        {{ form.as_p }}
         <button type="submit" class="button">Submit Order</button>
     </form>
 </div>

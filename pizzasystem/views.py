@@ -34,14 +34,14 @@ def checkout(request):
     user_profile, created = UserProfile.objects.get_or_create(user=request.user)
     
     if request.method == 'POST':
-        form = Checkout(request.POST, instance=user_profile)  # Use the correct form name
+        form = Checkout(request.POST, instance=user_profile) 
         if form.is_valid():
             form.save()
             return redirect('confirmation', order_id=request.session['order_id'])
         else:
             print(form.errors) 
     else:
-        form = Checkout(instance=user_profile)  # Initialize a new form for GET request
+        form = Checkout(instance=user_profile)
     return render(request, 'checkout.html', {'form': form})
 
 @login_required
@@ -78,8 +78,8 @@ def register_user(request):
     if request.method == "POST":
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            user = form.save()  # Save the new user
-            login(request, user)  # Log the user in immediately after registration
+            user = form.save()
+            login(request, user)  
             messages.success(request, "Registration successful!")
             return redirect('index')  # Redirect to a success or home page
         else:
@@ -97,5 +97,5 @@ def list_orders(request):
 
 
 
-# Create your views here.
+
 

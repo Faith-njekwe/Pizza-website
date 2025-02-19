@@ -1,4 +1,4 @@
-/* Custom styles for the navbar */
+
 
 * {
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
@@ -85,15 +85,15 @@ li a {
 /* Image styling */
 
 #pizza-image img {
-    width: 55%;    /* 40% of the parent container's width */
-    height: auto;  /* maintain the aspect ratio */
+    width: 55%; 
+    height: auto; 
     display: block; /* removes any extra space around the image */
-    margin: auto; /* centers the image horizontally */
+    margin: auto; 
 }
 
 #pizza-image {
-    width: 50%; /* Adjust this percentage based on your design needs */
-    margin: auto; /* Center the div container if needed */
+    width: 50%; 
+    margin: auto; 
 }
 
 
@@ -107,11 +107,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: red; /* Only apply red to navbar list */
+    background-color: red; 
 }
 
 .form-container {
-    box-sizing: border-box; /* Ensures padding does not increase the size */
+    box-sizing: border-box; 
     max-width: 600px;
     margin: 20px auto; /* Adds vertical margin for clearer separation from other elements */
     padding: 20px;
@@ -122,7 +122,7 @@ ul {
 
 
 input[type="text"], input[type="password"], textarea {
-    width: 100%; /* This will make the input fields take the full width of their container */
+    width: 100%; 
     padding: 10px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -156,42 +156,42 @@ input[type="submit"] {
 }
 
 .button-index {
-    background-color: #6c757d; /* Bootstrap secondary color */
-    color: white; /* Text color */
-    border: none; /* No borders */
-    padding: 10px 20px; /* Top and bottom padding, left and right padding */
-    text-align: center; /* Center the text inside the button */
-    text-decoration: none; /* No underline on text */
-    display: inline-block; /* Allows setting dimensions */
-    font-size: 16px; /* Size of the text */
-    margin: 4px 2px; /* Margin around the button */
-    transition-duration: 0.4s; /* Smooth transition for hover effect */
-    cursor: pointer; /* Cursor appears as a pointer */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #6c757d; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 5px; 
 }
 
 .button {
-    background-color: #6c757d; /* Bootstrap secondary color */
-    color: white; /* Text color */
-    border: none; /* No borders */
-    padding: 10px 20px; /* Top and bottom padding, left and right padding */
-    text-align: center; /* Center the text inside the button */
-    text-decoration: none; /* No underline on text */
-    display: inline-block; /* Allows setting dimensions */
-    font-size: 16px; /* Size of the text */
-    margin: 4px 2px; /* Margin around the button */
-    transition-duration: 0.4s; /* Smooth transition for hover effect */
-    cursor: pointer; /* Cursor appears as a pointer */
-    border-radius: 5px; /* Rounded corners */
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    transition-duration: 0.4s; 
+    cursor: pointer; 
+    border-radius: 5px; 
 }
 
 .button:hover {
-    background-color: #5a6268; /* A slightly darker shade when mouse hovers over it */
+    background-color: #5a6268;
     color: white; /* Text color remains the same */
 }
 
 .button-index:hover {
-    background-color: #5a6268; /* A slightly darker shade when mouse hovers over it */
+    background-color: #5a6268; 
     color: white; /* Text color remains the same */
 }
 
@@ -211,7 +211,7 @@ input[type="submit"] {
 
 .register-container {
     width: 90%;
-    max-width: 600px;  /* Adjust width to match the login page width */
+    max-width: 600px; 
     margin: 40px auto;
     padding: 20px;
     background-color: #fff;
@@ -223,15 +223,15 @@ input[type="submit"] {
     padding: 20px;
     width: fit-content;
     margin: 0 auto; /* Centers the div */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
-    border-radius: 8px; /* Optional: rounds the corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* adds shadow for better visibility */
+    border-radius: 8px; 
 }
 
 .confirmation_container {
     background-color: white;
     padding: 20px;
     width: fit-content;
-    margin: 0 auto; /* Centers the div */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
-    border-radius: 8px; /* Optional: rounds the corners */
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* adds shadow for better visibility */
+    border-radius: 8px; 
 }

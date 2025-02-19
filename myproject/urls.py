@@ -20,5 +20,4 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('pizzasystem.urls')),
     path('admin/', admin.site.urls),
-    path('members/', include('django.contrib.auth.urls')),
 ]

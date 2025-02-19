@@ -8,7 +8,7 @@ class UserProfile(models.Model):
     name = models.TextField()
     address = models.TextField()
     credit_card_number = models.CharField(max_length=16, null=True, blank=True)
-    credit_card_expiry = models.CharField(max_length=5, null=True, blank=True)  # MM/YY format
+    credit_card_expiry = models.CharField(max_length=5, null=True, blank=True) 
     credit_card_cvv = models.CharField(max_length=4, null=True, blank=True)
     email = models.EmailField()
     
@@ -34,7 +34,7 @@ class UserProfile(models.Model):
         return cvv.isdigit() and len(cvv) in [3, 4]
     
     
-    
+#choices for pizza
 class Pizza(models.Model):
     SIZE_CHOICES = [
         ('S', 'Small'),
@@ -69,19 +69,14 @@ class Pizza(models.Model):
     ]
 
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    #python doesn't know what user is, so it's a foreign key
-    #since users is related to the pizza, delete pizza if deleting users
     size = models.CharField(max_length=1, choices=SIZE_CHOICES, default='S')
     crust = models.CharField(max_length=2, choices=CRUST_CHOICES, default='N')
     sauce = models.CharField(max_length=3, choices=SAUCE_CHOICES, default='TOM')
     cheese = models.CharField(max_length=3, choices=CHEESE_CHOICES, default='MOZ')
-    toppings = models.CharField(max_length=15, choices=TOPPING_CHOICES, default='Pepperoni')# List toppings as a text field, or consider a ManyToManyField for a more dynamic approach
+    toppings = models.CharField(max_length=15, choices=TOPPING_CHOICES, default='Pepperoni')
     order_date = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
         return f"{self.get_size_display()} {self.get_toppings_display()} Pizza ordered by {self.user.userprofile.name}"
 
-
-#do makemigrations to save changes, the migrate
-#create a superuser to make the database, plus login with details at http://127.0.0.1:8000/admin
 
